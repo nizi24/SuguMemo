@@ -12,6 +12,15 @@ SwiftUIを使用して開発しています。
 
 [AppStore](https://apps.apple.com/us/app/%E3%82%BF%E3%82%B0%E3%83%A1%E3%83%A2/id1540566095?itsct=apps_box&itscg=30200)
 
+## :computer: Features
+
+- 検索する
+
+![iphone12_keynote_tag_memoReadMeImage 006](https://user-images.githubusercontent.com/62362974/103216805-49dc7100-495a-11eb-8da3-043fe3dcfb8a.jpeg)
+
+- タグで分類する
+
+![iphone12_keynote_tag_memoReadMeImage 007](https://user-images.githubusercontent.com/62362974/103216810-4c3ecb00-495a-11eb-897a-e1883a1485e1.jpeg)
 
 ## :pencil2: Description
 
@@ -23,15 +32,32 @@ SwiftUIを使用して開発しています。
 
 メモの保存にはRealmSwiftを使用しています。
 
-## :computer: Features
+## 使用技術・仕様の説明
 
-- 検索する
+※該当コードへのURLを載せているので是非ご覧ください。
 
-![iphone12_keynote_tag_memoReadMeImage 006](https://user-images.githubusercontent.com/62362974/103216805-49dc7100-495a-11eb-8da3-043fe3dcfb8a.jpeg)
+#### 使用技術
+| 名称 | 説明 |
+| ---- | ---- |
+| SwiftUI | UIフレームワーク |
+| Realm Swift | データストア |
 
-- タグで分類する
+- Realmはメモを保存するのに使用しています。
 
-![iphone12_keynote_tag_memoReadMeImage 007](https://user-images.githubusercontent.com/62362974/103216810-4c3ecb00-495a-11eb-897a-e1883a1485e1.jpeg)
+#### 仕様・工夫した点
+
+- メモを更新する時は自動保存
+  - [該当コード](https://github.com/nizi24/TagMemo/blob/main/SuguMemo/ViewModel/EditMemoViewModel.swift#L13-L27)
+- タイトルが設定されていない場合は、リスト表示したときに本文の冒頭が表示される
+  - [該当コード](https://github.com/nizi24/TagMemo/blob/main/SuguMemo/ViewModel/MemoDisplayProcessor.swift#L14-L21)
+- メモを検索する際は、タイトル、タグ、本文から部分一致で検索する
+  - どれかのみを使用するように設定することもできる
+  - [該当コード](https://github.com/nizi24/TagMemo/blob/main/SuguMemo/Model/SearchMemo.swift#L18-L32)
+- タグごとにメモを分類するタグモード
+  - メモ一覧のタグのマークを押すと切り替えられる
+  - [該当コード(View)](https://github.com/nizi24/TagMemo/blob/main/SuguMemo/Views/MemoListTagModeView.swift)
+  - [該当コード(ViewModel、タグごとにメモを分類)](https://github.com/nizi24/TagMemo/blob/main/SuguMemo/ViewModel/MemoListTagModeViewModel.swift#L22-L26)
+
 
 ## :computer: Version
 
