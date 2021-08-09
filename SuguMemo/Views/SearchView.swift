@@ -23,7 +23,9 @@ struct SearchView: View {
             }
             Divider()
             MemoList(memoList: $viewModel.results, results: $viewModel.results)
-            Spacer()
+            AdView()
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
         }
         .navigationBarTitle(Text("検索"), displayMode: .inline)
         .navigationBarItems(trailing:

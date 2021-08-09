@@ -14,6 +14,9 @@ struct EditMemoVIew: View {
     var body: some View {
         VStack {
             MemoForm(title: $viewModel.title, context: $viewModel.context, tags: $viewModel.tags)
+            AdView()
+                .frame(maxWidth: .infinity)
+                .frame(height: 50)
         }
         .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
     }

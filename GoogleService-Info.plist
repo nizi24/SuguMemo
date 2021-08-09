@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>915001333429-idpckpcdjj7t910cd7at6lju5jtsfr10.apps.googleusercontent.com</string>
+	<string>915001333429-c17mrr4ngvqrbuj9hoh3ev829cni7rmr.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.915001333429-idpckpcdjj7t910cd7at6lju5jtsfr10</string>
+	<string>com.googleusercontent.apps.915001333429-c17mrr4ngvqrbuj9hoh3ev829cni7rmr</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDwXxmBFWChfKJ_dvpb78n_QQo6wYbl6x8</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,23 +13,23 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.yunishida.SuguMemo</string>
+	<string>com.yunishida.TagMemo1</string>
 	<key>PROJECT_ID</key>
 	<string>sugumemo-e6e13</string>
 	<key>STORAGE_BUCKET</key>
 	<string>sugumemo-e6e13.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:915001333429:ios:a39500244e0ff6832490fc</string>
+	<string>1:915001333429:ios:10b63285aa9e3ba32490fc</string>
 	<key>DATABASE_URL</key>
 	<string>https://sugumemo-e6e13.firebaseio.com</string>
 </dict>

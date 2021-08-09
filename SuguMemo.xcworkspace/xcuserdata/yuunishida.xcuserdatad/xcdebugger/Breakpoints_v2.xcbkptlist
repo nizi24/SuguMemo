@@ -331,8 +331,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "2DA87041-D546-49D0-8A45-7C6AD522B3AF - 82c30975d64d3f03"
@@ -377,8 +377,8 @@
             filePath = "SuguMemo/Views/MemoListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>

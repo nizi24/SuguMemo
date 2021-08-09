@@ -10,21 +10,40 @@ import GoogleMobileAds
 
 struct MemoListView: View {
     @EnvironmentObject var viewModel: MemoListViewModel
+    @State var tagMode = false
     
     var body: some View {
         NavigationView {
-//            AdView()
-            MemoList(memoList: $viewModel.memoList)
+            VStack {
+                if tagMode {
+                    MemoListTagModeView(memoList: $viewModel.memoList)
+                        .onAppear {
+                            viewModel.memoList = []
+                            viewModel.getAllInRealm(memodb: MemoDB())
+                        }
+                } else {
+                    MemoList(memoList: $viewModel.memoList)
+                        .onAppear {
+                            viewModel.memoList = []
+                            viewModel.getAllInRealm(memodb: MemoDB())
+                        }
+                }
+                AdView()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+            }
             .navigationBarTitle(Text("メモ一覧"), displayMode: .inline)
             .navigationBarItems(leading: EditButton(), trailing:
-                NavigationLink(destination: SearchView()) {
-                    Image(systemName: "magnifyingglass")
+                HStack {
+                    Button(action: {
+                        tagMode.toggle()
+                    }, label: { Image(systemName: tagMode ? "tag.fill" : "tag") })
+                    .padding()
+                    NavigationLink(destination: SearchView()) {
+                        Image(systemName: "magnifyingglass")
+                    }
                 }
             )
-            .onAppear {
-                viewModel.memoList = []
-                viewModel.getAllInRealm(memodb: MemoDB())
-            }
         }
     }
 }

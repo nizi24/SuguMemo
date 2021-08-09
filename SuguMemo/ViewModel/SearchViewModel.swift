@@ -25,12 +25,5 @@ class SearchViewModel: ObservableObject {
             results.append(memo)
         }
     }
-    
-    func searchInMemoList(memoList: [Memo]) -> [Memo] {
-        var r: [Memo] = []
-        for memo in memoList {
-            r = results.filter { $0.id == memo.id }
-        }
-        return r
-    }
+ 
 }

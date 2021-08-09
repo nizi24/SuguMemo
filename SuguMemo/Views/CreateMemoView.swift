@@ -18,6 +18,9 @@ struct CreateMemoView: View {
         NavigationView {
             VStack {
                 MemoForm(title: $viewModel.title, context: $viewModel.context, tags: $viewModel.tags)
+                AdView()
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
             }
             .navigationBarTitle(Text("新規作成"), displayMode: .inline)
             .navigationBarItems(trailing:
